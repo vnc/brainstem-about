@@ -1,0 +1,31 @@
+about:
+* Brainstem is a fast, scalable and efficient set of REST-ful web services for accessing AWS resources
+* These web services serve as a “broker” between end users/developers as they create, use, and terminate various pieces of AWS infrastructure, ensuring that critical business needs (security, authorization, configuration, cost control, etc) are fulfilled.
+* management and development API
+* REST API
+* built on AWS
+* centralized authentication
+
+features:
+* Authentication and authorization centralized in active directory
+* Currently supports the follwoing AWS services: EC2, EBS, EMR, RDS, and IAM
+* Provision temporary keys for all AWS services
+* Logging by individual user and action for auditing purposes
+* RESTful architecture enables programmatic access using any language that can make HTTP requests
+* Smart caching provides fast API response times
+* Full documentation across entire API, including code samples for multiple languages
+
+web interface:
+* Clean, simple user interface allows fast access (control/manipulation) of AWS resources
+* HTML5 thick-client
+* Requires no server-side application code
+* Option to see raw API request before being sent to Brainstem server to ease developer adoption
+
+development:
+* Core API and GUI built in 6-day offsite hackathon
+* Agile approach contributed to team's ability to collaborate efficiently
+* Twice daily standups kept team aligned while allowing for individual focused time
+* Parallel development of API and GUI (i.e. client) enabled by close collaboration and good documentaiton
+* something about how we were able to dev GUI and API in parallel
+
+Met project deadline and exceeded original business requriements
