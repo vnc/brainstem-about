@@ -14,7 +14,10 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
-section { padding-bottom: 800px; }
+section { 
+	padding-bottom: 800px; 
+	
+}
 
 
 /* =============================================================================
@@ -240,7 +243,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     Author: Jonathan Verrecchia
    =================================================== */
 
-body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+body{ font:16px/26px 'Ubuntu', sans-serif; }
 
 .wrapper{
 	width:90%;
@@ -267,10 +270,12 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 #main aside { background: #888; }
 
 #title{ 
-	/*color:#1989B0;*/
 	color: #ddd;
-  	text-shadow: -3px 0 4px #000;
+  	text-shadow: -3px 0 4px #444;
   	position: relative;
+  	font-family: 'Ubuntu', sans-serif;
+  	letter-spacing: 1px;
+  	font-weight: normal;
 }
 #title {
     color#222;
@@ -287,8 +292,8 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 
 
 
-::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
-::selection      { background: #f16529; color: #fff; text-shadow: none; }
+::-moz-selection { background: #00b5f7; color: #fff; text-shadow: none; }
+::selection      { background: #00b5f7; color: #fff; text-shadow: none; }
 
 /* ==============
     MOBILE: Menu
