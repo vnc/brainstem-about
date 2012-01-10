@@ -57,11 +57,27 @@
 						Why have another system to manage your system?
 					</p><p>
 						<h3>AWS Services</h3>
-						Brainstem currently supports the follwoing AWS services: EC2, EBS, EMR, RDS, and IAM. 
+						Brainstem currently supports EC2, EBS, EMR, RDS, and IAM. 
+						These are the services that get the highest usage, so we included them first.
+						We are continually developing new features and adding new servives to Brainstem.
+					</p><p>
+						<h3>Temporary Access</h3>
+						One of the nice features of AWS is the ability to grant access to specific AWS resources for a temporary ammount of time.
+						This allows Admins to give temporary access to a third party without having to worry about revoking the privaledges down the road.
+						This also allows developers to programatically request a set of keys instead of storing them in their script or application. 
+						By requesting Amazon API Keys, developers are still able to utilize all of Amazon's Web Services. 
+					</p><p>
+						<h3>Logging</h3>
+						Every request made through Brainstem is logged. 
+						This allows Admins the ability easily audit changes made to their cloud infrastucture.
+						Retreiving the logs is as easy as making a REST API call.
+					</p><p>	
+						<h3>REST Easy</h3>
+						One of the great benefits of using a REST interface is that it can be called from any language that can make HTTP requests. 
+						To make it even easier, we have provided sample code for some of the most common langues including Ruby, C#, Java, Python, Javascript, PHP, and Curl.
+					</p><p>
+						<h3>Smart Caching</h3>
 						
-						* Provision temporary keys for all AWS services
-						* Logging by individual user and action for auditing purposes
-						* RESTful architecture enables programmatic access using any language that can make HTTP requests
 						* Smart caching provides fast API response times
 						* Full documentation across entire API, including code samples for multiple languages
 					</p>
