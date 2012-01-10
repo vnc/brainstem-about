@@ -73,8 +73,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #eee; te
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
+a { color: #00b5f7; }
+a:visited { color: #aaa; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
@@ -109,6 +109,10 @@ q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
 
 small { font-size: 85%; }
+
+h2{
+	color: #00b5f7;
+}
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
@@ -296,7 +300,7 @@ nav a{
 	padding:15px 0;
 
 	background:transparent;
-	color:#1989B0;
+	color:#00b5f7;
 
 	text-align:center;
 	text-decoration:none;
@@ -304,7 +308,7 @@ nav a{
 }
 
 nav a:hover, nav a:visited{
-	color:#1989B0;
+	color:#00b5f7;
 }
 
 nav a:hover{
@@ -333,14 +337,6 @@ nav a:hover{
 	padding:20px 0;
 }
 
-
-a{
-	color: #1989B0;
-}
-
-a:visited{
-	color: #aaa;
-}
 
 /* ===============
     ALL: IE Fixes
