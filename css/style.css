@@ -262,7 +262,6 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 */
 #main aside { background: #888; }
 
-#title{ color:#1989B0; }
 
 ::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
 ::selection      { background: #f16529; color: #fff; text-shadow: none; }
