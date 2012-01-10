@@ -262,6 +262,26 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 */
 #main aside { background: #888; }
 
+#title{ 
+	/*color:#1989B0;*/
+	color: #ddd;
+  	text-shadow: -3px 0 4px #000;
+  	position: relative;
+}
+#title {
+    color#222;
+    position:relative;
+}
+#title span {
+    position:absolute;
+    width:100%;
+    height:40px;
+    display:block;
+    background: url(img/text-gradient.png) repeat-x;
+
+}
+
+
 
 ::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
 ::selection      { background: #f16529; color: #fff; text-shadow: none; }
@@ -313,6 +333,14 @@ nav a:hover{
 	padding:20px 0;
 }
 
+
+a{
+	color: #1989B0;
+}
+
+a:visited{
+	color: #aaa;
+}
 
 /* ===============
     ALL: IE Fixes
