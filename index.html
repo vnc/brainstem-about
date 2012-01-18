@@ -37,12 +37,11 @@
 					<h2><img src="img/cloud-filled.png" align="center"/> Introducing, Brainstem.</h2>
 					<p>
 						Brainstem is a fast, scalable, and efficient set of REST-ful web services used to help make Amazon's Web Services easier to manage.
-						These web services serve as a “broker” between end users/developers as they create, modify, and remove various pieces of AWS infrastructure, ensuring that critical business needs (security, authorization, configuration, cost control, etc) are fulfilled.
-						Users, developers, and engineers are able to choose thier prefered way of using Braintem because it separates the UI and API.
+						These web services serve as a “broker" between end users and developers as they create, modify, and remove various pieces of AWS infrastructure, ensuring that critical business needs (security, authorization, configuration, cost control, etc) are fulfilled.
+						Users, developers, and engineers are able to choose between making Brainstem API calls directly, or using 
+						a web GUI built on top of the API.
 					</p><p>
-						Brainstem is <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> API written in Ruby. 
-						Brianstem also has detailed documentation for every one of it's features an includes sample code for your prefered language to get you up and running as soon as possible.   
-						We use AWS everyday and we know what it takes to get things done. Brainstem helps us get those things done faster and more efficiently.
+						Brainstem is a <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> API written in Ruby. Brainstem contains detailed built-in documentation that explains the usage for each of the available API calls, including sample code for many popular programming languages, to get you up and running as soon as possible. We use AWS everyday and we know what it takes to get things done. Brainstem helps us get those things done faster and more efficiently.
 					</p>
 					<img src="img/login.png" title="Brainstem Login Page" />
 				</section>
@@ -50,59 +49,57 @@
 					<h2><img src="img/add-item.png" align="center"/> Brainstem Features</h2>
 					<p>
 						<h3>Active Directory Integration</h3>
-						One of the main features of Brainstem is that it integrates directly with Active Directory. 
-						This allows authentication and authorization to be centrally managed. 
-						Why have another system to manage your system?
+						Brainstem integrates directly with Active Directory, allowing authentication and authorization to be centrally managed in one place. Why have another system to manage your system?
 					</p><p>
 						<h3>Multiple AWS Services</h3>
 						Brainstem currently supports EC2, EBS, EMR, RDS, and IAM. 
 						These are the services that get the highest usage, so we included them first.
-						We are continually developing new features and adding new servives to Brainstem.
+						We are continually developing new features and adding new services to Brainstem.
 					</p><p>
 						<h3>Temporary Resource Access</h3>
-						One of the nice features of AWS is the ability to grant access to specific AWS resources for a temporary ammount of time.
-						This allows Admins to give temporary access to a third party without having to worry about revoking the privaledges down the road.
-						This also allows developers to programatically request a set of keys instead of storing them in their script or application. 
-						By requesting Amazon API Keys, developers are still able to utilize all of Amazon's Web Services. 
+						Brainstem provides support for granting access to specific AWS resources for a temporary amount of time.
+						This allows admins to give temporary access to a third party without having to worry about revoking the privileges down the road.  The temporary access can also be tailored to exactly the resources needed, and nothing more, by using a pre-defined set of access policies.
+						This also allows developers to programatically request a set of keys instead of hardcoding them or storing them in their script or application. 
+						By requesting these temporary Amazon API Keys, developers are still able to utilize all of Amazon's Web Services. 
 					</p><p>
 						<h3>Logging</h3>
 						Every request made through Brainstem is logged. 
-						This allows Admins the ability easily audit changes made to their cloud infrastucture.
-						Retreiving the logs is as easy as making a REST API call.
+						This allows admins the ability easily audit changes made to their cloud infrastructure.
+						Retrieving the logs is as easy as making a REST API call.
 					</p><p>	
 						<h3>REST Easy</h3>
 						One of the great benefits of using a REST interface is that it can be called from any language that can make HTTP requests. 
-						To make it even easier, we have provided sample code for some of the most common langues including Ruby, C#, Java, Python, Javascript, PHP, and Curl.
+						To make it even easier, we have provided sample code for some of the most common languages in use here at VivaKi, including Ruby, C#, Java, Python, Javascript, PHP and Curl.
 					</p><p>
 						<h3>Smart Caching</h3>
-						
-						* Smart caching provides fast API response times
-						* Full documentation across entire API, including code samples for multiple languages
+						Smart caching of AWS data provides fast API response times for users of brainstem.
+						Typically, requesting information about AWS resources via brainstem is faster then querying that 
+						same information directly from Amazon.
 					</p>
 				</section>
 				<section id="web_interface">
-					<h2><img src="img/light.png" align="center"/> Brainstem Web Interface</h2>
+					<h2><img src="img/light.png" align="center"/>Brainstem Web Interface</h2>
 					<p>
 						* Clean, simple user interface allows fast access (control/manipulation) of AWS resources
-						* HTML5 thick-client
-						* Requires no server-side application code
-						* Option to see raw API request before being sent to Brainstem server to ease developer adoption
+						* HTML5 thick-client requires no server-side application code
+						* web app uses the same brainstem API calls that are available to any end-user 
+						* 'Develop mode' option allows a user to see the raw brainstem API request before it's sent to the Brainstem server, lowering the learning curve involved in using brainstem programmatically.
 					</p>
 				</section>
 				<section id="development">
 					<h2><img src="img/processing.png" align="center"/> Brainatem Development</h2>
 					<p>
-						* Core API and GUI built in 6-day offsite hackathon
+						* Large portions of the core API and GUI were built in 6-day offsite hackathon
 						* Agile approach contributed to team's ability to collaborate efficiently
 						* Twice daily standups kept team aligned while allowing for individual focused time
-						* Parallel development of API and GUI (i.e. client) enabled by close collaboration and good documentaiton
-						* something about how we were able to dev GUI and API in parallel
+						* Parallel development of API and GUI (i.e. client) enabled by close collaboration and good 
+						(e.g. available and up-to-date) documentation
 					</p>
 				</section>
 				<footer>
-					<h3>End result?</h3>
+					<h3>The end result?</h3>
 					<p>
-						Met project deadline and exceeded original business requriements
+						Brainstem not only solves myriad business challenges with a robust, scalable and maintainable code base, it also met the project deadline and exceeded the original business requirements.
 					</p>
 				</footer>
 			</article>
