@@ -2,11 +2,11 @@
 
 */
 
-
 $(document).ready(function() {
+	$.waypoints.settings.scrollThrottle = 30;
 	// make <aside> box fixed position when window is scrolled
 	$('aside').waypoint(function(event, direction) {
-		//alert($(this).css('width') + ' ' + $(this).css('height'));
+		//alert(direction);
 		if (direction === "down") {
 			// get the current properties
 			var leftOffset = $(this).offset().left
@@ -18,7 +18,7 @@ $(document).ready(function() {
 			// set the new properties
 			$(this).css('position', 'fixed');
 			$(this).css('left', leftOffset);
-			$(this).css('top', 50);
+			$(this).css('top', 212);
 			$(this).css('width', width);
 			$(this).css('height', height);
 			$(this).css('padding-left', paddingLeft);
@@ -28,16 +28,23 @@ $(document).ready(function() {
 			$(this).css('position', 'static');
 			$(this).css('left', 'auto');
 			$(this).css('top', 'auto');
+			
+			// needed for some reason i can't figure out
+			$.waypoints('refresh');
 		}
 	}, {
-		offset: 50
+		offset: 212
+	});
+	$('nav').waypoint(function(event, direction) {
+		$(this).toggleClass('sticky', direction == "down");
+		event.stopPropagation();
 	});
 	
 	// make the nav links scroll down to the approproate area
 	$('.scrollPage').click(function() {
 	   var elementClicked = $(this).attr("href");
 	   var destination = $(elementClicked).offset().top;
-	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-20}, 500 );
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-150}, 500 );
 	   return false;
 	});
 });
