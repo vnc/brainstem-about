@@ -290,6 +290,10 @@ body{ font:16px/26px 'Ubuntu', sans-serif; }
 
 }
 
+header #logo {
+	float: right;
+}
+
 .sticky {
 	position: fixed;
 	top: 0;

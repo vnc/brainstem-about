@@ -19,6 +19,7 @@
 	<div id="top"></div>
 	<div id="header-container">
 		<header class="wrapper clearfix">
+			<img id="logo" src="img/vnc-logo.png" />
 			<h1 id="title">Brainstem</h1>
 		</header>
 	</div>
@@ -36,87 +37,106 @@
 		<div id="main" class="wrapper clearfix">
 			<article>
 				<section id="about">
-					<h2><img src="img/cloud-filled.png" align="center"/> Introducing, Brainstem.</h2>
+					<h2><img src="img/cloud-filled.png" align="center"/> Introducing Brainstem</h2>
 					<p>
-						Brainstem is a fast, scalable, and efficient set of REST-ful web services used to help make Amazon's Web Services easier to manage.
-						These web services serve as a “broker" between end users and developers as they create, modify, and remove various pieces of AWS infrastructure, ensuring that critical business needs (security, authorization, configuration, cost control, etc) are fulfilled.
-						Users, developers, and engineers are able to choose between making Brainstem API calls directly, or using 
-						a web GUI built on top of the API.
+						Brainstem is a fast, scalable, and efficient set of REST-ful web services to help make Amazon's Web Services (AWS) easier to manage.
+						Brainstem serves as a “broker" between AWS and developers as they create, modify, and delete various pieces of AWS infrastructure, ensuring that critical business needs like security, consistent configuration, and cost control are met.
+						Brainstem users are able to choose between making Brainstem API calls directly, or using a web GUI built on top of the API.
 					</p><p>
-						Brainstem is a <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> API written in Ruby. Brainstem contains detailed built-in documentation that explains the usage for each of the available API calls, including sample code for many popular programming languages, to get you up and running as soon as possible. We use AWS everyday and we know what it takes to get things done. Brainstem helps us get those things done faster and more efficiently.
+						More specifically, Brainstem is a <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> API written in Ruby and contains detailed built-in documentation that explains how to use each of the available API calls. Sample code is also included for many popular programming languages to get you up and running as soon as possible. The VNC Seattle team uses AWS everyday, and Brainstem helps us to be more efficient.
+					</p><p>
+						<h3>Brainstem Diagram</h3>
+						<img src="img/brainstem-diagram.png" />
 					</p>
-					<img src="img/login.png" title="Brainstem Login Page" />
 				</section>
 				<section id="features">
-					<h2><img src="img/add-item.png" align="center"/> Brainstem Features</h2>
+					<h2><img src="img/add-item.png" align="center"/> Brainstem Features and Benefits</h2>
 					<p>
-						<h3>Active Directory Integration</h3>
-						Brainstem integrates directly with Active Directory, allowing authentication and authorization to be centrally managed. Why have another system to manage your system?
-					</p><p>
 						<h3>Multiple AWS Services</h3>
 						Brainstem currently supports EC2, EBS, EMR, RDS, and IAM. 
-						We use these services the most, so we included them first.
+						These are the services we use the most, so we included them first.
 						We are continually developing new features and adding new services to Brainstem.
 					</p><p>
-						<h3>Temporary Resource Access</h3>
-						Brainstem provides support for granting access to specific AWS resources for a temporary amount of time.
-						This allows admins to give temporary access to a third party without having to worry about revoking the privileges down the road.  The temporary access can also be tailored to exactly the resources needed, and nothing more, by using a pre-defined set of access policies.
-						This also allows developers to programatically request a set of keys instead of hardcoding them or storing them in their script or application. 
-						By requesting these temporary Amazon API Keys, developers are still able to utilize all of AWS's products even if Brainstem doesn't directly support them. 
-					</p><p>
-						<h3>Detailed Logging</h3>
-						Every request made through Brainstem is logged. 
-						This allows admins the ability easily audit changes made to their cloud infrastructure.
-						Retrieving the logs is as easy as making a REST API call or a few clicks in the web interface.
-					</p><p>	
 						<h3>REST Easy</h3>
 						One of the great benefits of using a REST interface is that it can be called from any language that can make HTTP requests. 
-						To make it even easier, we have provided sample code for some of the most common languages in use here at VivaKi, including Ruby, C#, Java, Python, Javascript, PHP and Curl.
+						To help you get started, we have provided sample code for some of the most common programming languages at VivaKi including Ruby, C#, Java, Python, Javascript, PHP, and the *nix shell (cURL).
 					</p><p>
 						<h3>Smart Caching</h3>
 						Smart caching of AWS data provides fast API response times for users of Brainstem.
 						Typically, requesting information about AWS resources via Brainstem is faster then querying that 
-						same information directly from Amazon.
+						same information directly from AWS.
+					</p>
+						<h3>Temporary Resource Access</h3>
+						Brainstem supports granting access to specific AWS resources for a temporary amount of time.
+						This allows admins to give temporary access to a third party without having to worry about later revoking the privileges. The temporary access can also be tailored to exactly the resources needed, and nothing more, by using a pre-defined set of access policies.
+						This also allows developers to programatically request a set of keys instead of hardcoding them or storing them in their script or application. 
+						By requesting these temporary AWS API Keys, developers are still able to utilize all of AWS's products even if Brainstem doesn't directly support them. 
+					</p><p>
+						<h3>Secure</h3>
+						All API requests and responses are encrypted from end-to-end using HTTPS.
+						<h3>Active Directory Integration</h3>
+						Brainstem integrates directly with Active Directory, allowing authentication and authorization to be centrally managed. Why have another system to manage your system?
+					</p><p>
+						<h3>Detailed Logging</h3>
+						Every request made through Brainstem is logged. 
+						This allows admins to easily audit changes made to their cloud infrastructure.
+						Retrieving the logs is as easy as making a REST API call or a few clicks in the web interface.
 					</p>
 				</section>
 				<section id="web_interface">
 					<h2><img src="img/light.png" align="center"/>Brainstem Web Interface</h2>
 					<p>
-						* Clean, simple user interface allows fast access (control/manipulation) of AWS resources
-						* HTML5 thick-client requires no server-side application code
-						* web app uses the same Brainstem API calls that are available to any end-user 
-						* 'Develop mode' option allows a user to see the raw Brainstem API request before it's sent to the Brainstem server, lowering the learning curve involved in using Brainstem programmatically.
+						<h3>Clean, simple user interface</h3>
+						The Brainstem graphical user interface (GUI) application was designed for fast and efficient access to AWS resources.
+						We listened to the problems users were experiencing with our legacy AWS management application and designed the new interface with this feedback in mind.
+					</p><p>
+						<h3>HTML5 and JavaScript Thick Client</h3>
+						We wanted the Brainstem GUI to require <i>no</i> server-side application code.
+						This means less time spent by Operations Engineers maintaining the application.
+						The entire GUI application is written in JavaScript and runs on the user's web browser.
+						All that is needed is a web server to serve the necessary HTML, CSS, and JavaScript files.
+					</p><p>
+						<h3>Develop Mode</h3>
+						To help developers quickly learn how to contruct Brainstem API requests, we created "Develop Mode".
+						Since the GUI runs completely from the user's browser, it effectively makes Brainstem API requests from the user's browser.
+						The user's GUI interactions are translated and sent off as Brainstem API requests.
+						Develop Mode displays to the user the details of each Brainstem API request before it is sent off.
+						These details can then be used as examples by a developer as he or she writes code to interact with Brainstem.
+					</p><p>
+						<h3>Secure</h3>
+						The Brainstem GUI security model was implemented after considerable analysis on potential vulnerability points.
+						All communication between the user's browser and the server is encrypted, and the username and password are stored securely in memory.
 					</p>
 				</section>
 				<section id="development">
 					<h2><img src="img/processing.png" align="center"/> Brainatem Development</h2>
 					<p>
 						<h3>6-Day Hackathon</h3>
-						Because of an extremely short timeline, we decided to try an unorthodox development strategy.  This included a two week planning phase followed by a 6 day remote hack-a-thon.  The goal was total seclusion and focus.  No email, no IM (outside of emergencies).  We were singularly focused on returning to the office with an application that fully met the aggressive list of requirements.  
+						Because of an extremely short timeline, we decided to try an unorthodox development strategy.  This included a two week planning phase followed by a 6-day remote hack-a-thon.  The goal was total seclusion and focus.  No email, no IM (outside of emergencies).  We were singularly focused on returning to the office with an application that fully met the aggressive list of requirements.  
 					</p>
 					<p>
 						<h3>Development Process</h3>
-						We wanted to implement an API and a GUI that depended on the API in parallel.  In order to get both of these done effectively and efficiently, we set the following guidelines for ourselves:
-						<ul>
-							<li>every day will include morning demos/code reviews during or right after breakfast, lunch-time includes a stand-up, and at dinner another stand-up/demo</li>
+						We wanted to implement, in parallel, an API in addition to a GUI that depended on the API.  In order to get both of these done effectively and efficiently, we set the following guidelines for the 6-day offsite:
+						<ol>
+							<li>every day will include morning demos/code reviews during or right after breakfast, lunch-time will include a stand-up, and dinner another stand-up/demo</li>
 							<li>tests must be written before any functionality is considered finished</li>
 							<li>documentation must be written before any functionality is considered finished</li>
 							<li>if your check-in breaks any existing tests, it's your responsibility to fix it</li>
 							<li>try to figure out your own problems, but speak up if you get blocked for more than 30 minutes</li>
 							<li>use TODO comments liberally to flag less essential things that come to mind as you're coding</li>
 							<li>the team is committing to specific goals for the week.  the team is NOT committing to working specific hours for the week.</li>
-						</ul>
+						</ol>
 					</p>
 					<p>
 						<h3>Learnings</h3>
-						We learned a ton from this experience and hope that what we learned can be helpful to others.
-						<ul>
+						We learned a ton from this experience and hope what we learned can be helpful to others.
+						<ol>
 							<li><i>Identify the "really important things".</i><br />These might be team goals.  These might be user stories or epics.  When everyone understands really clearly what the "really important things" are, productivity goes up quickly.</li>
 							<li><i>Communicate a vision and get the team inspired and motivated by that vision.</i><br />  This one and the above one go together.  Identifying the really important things is a good first step.  Influencing everyone on the team into believing they really are important is even better.  In other words, you can't just tell them it's important, you have to convince them it's important.</li>
-							<li><i>Distractions kill us.</i><br />  Not only do distractions take time away from focusing on the really important things, but context switching takes away more time.  I'm not saying people should work non-stop in a sound-proof, locked office.  People need breaks, exercise, fresh air, social time, beer, etc.  But when someone wants to focus, let him focus.</li>
-							<li><i>Find the right people.</i><br />  I know it's really tough to find and hire the perfect candidate, but the sheer amount of high quality work we got done in a week is a strong testament to the necessity of this.</li>
-							<li><i>Use tools that don't add friction.</i><br />  Hard to use or understand tools not only cause unnecessary slow-downs but also create feelings of frustration or anger which then kill creativity.  We used <a href="http://trello.com">trello.com</a> to keep everyone in sync.  It's amazing how little administrative tasks can derail focus and creative thought (i.e. "the flow").</li>
-						</ul>
+							<li><i>Distractions kill us.</i><br />  Not only do distractions take time away from focusing on the really important things, but context switching takes away even more time.  I'm not saying people should work non-stop in a sound-proof, locked office.  People need breaks, exercise, fresh air, social time, beer, etc.  But when someone wants to focus, let him focus.</li>
+							<li><i>Find the right people.</i><br />  I know it's really tough to find and hire the perfect candidate, but the sheer amount of high quality work we got done in six days is a strong testament to the necessity of this.</li>
+							<li><i>Use tools that don't add friction.</i><br />  Hard to use or understand tools not only cause unnecessary slow-downs but also create feelings of frustration or anger which then kill creativity.  It's amazing how little administrative tasks can derail focus and creative thought (i.e. "the flow").  We used <a href="http://trello.com">trello.com</a> to keep everyone in sync.</li>
+						</ol>
 					</p>
 					<p>
 						<h3>Contributors</h3>
@@ -125,8 +145,9 @@
 							<li>Micheal Wasser: API Developer</li>
 							<li>Garrett Patterson: UI Developer</li>
 							<li>Carl Krauss: UI Developer</li>
-							<li>Chris Castle: Product owner/API dev/UI Dev</li>
 							<li>Stephen Renault: API Tester</li>
+							<li>Chris Castle: Product Owner/API Dev/UI Dev</li>
+						</ul>
 				</section>
 				<footer>
 					<h3>The end result?</h3>
