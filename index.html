@@ -45,26 +45,33 @@
 					</p><p>
 						More specifically, Brainstem is a <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> API written in Ruby and contains detailed built-in documentation that explains how to use each of the available API calls. Sample code is also included for many popular programming languages to get you up and running as soon as possible. The VNC Seattle team uses AWS everyday, and Brainstem helps us to be more efficient.
 					</p><p>
-						<h3>Brainstem Diagram</h3>
-						<img src="img/brainstem-diagram.png" />
+						<h3>How Brainstem Interacts With AWS</h3>
+						<img class='screenshot' src="img/brainstem-diagram.png" />
 					</p>
 				</section>
 				<section id="features">
 					<h2><img src="img/add-item.png" align="center"/> Brainstem Features and Benefits</h2>
 					<p>
 						<h3>Multiple AWS Services</h3>
-						Brainstem currently supports EC2, EBS, EMR, RDS, and IAM. 
-						These are the services we use the most, so we included them first.
+						<img class='screenshot' src="img/aws-services-supported.png">
+						Brainstem currently supports EC2, EBS, EMR, IAM, and RDS. 
+						These are the services we use most frequently so we included them first.
 						We are continually developing new features and adding new services to Brainstem.
 					</p><p>
+						<h3>Multiple AWS Accounts</h3>
+						<img class='screenshot' src="img/multiple-aws-accounts.png">
+						Multiple AWS accounts can be managed from a single instance of Brainstem.  We have separate AWS accounts for Development, Testing/QA, and Production.
+						Brainstem supports all of these and any number of others we might want to add in the future.
+					</p><p>
 						<h3>REST Easy</h3>
-						One of the great benefits of using a REST interface is that it can be called from any language that can make HTTP requests. 
-						To help you get started, we have provided sample code for some of the most common programming languages at VivaKi including Ruby, C#, Java, Python, Javascript, PHP, and the *nix shell (cURL).
+						One of the great benefits of using a  <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> interface is that it can be called from any language that can make HTTP requests. 
+						To help you get started, we have provided sample code for some of the most common programming languages at VivaKi including <a href="http://www.ruby-lang.org/en/">Ruby</a>, <a href="http://en.csharp-online.net/CSharp_Language_Specification">C#</a>, <a href="http://www.java.com">Java</a>, <a href="http://python.org">Python</a>, <a href="http://en.wikipedia.org/wiki/JavaScript">Javascript</a>, <a href="http://www.php.net">PHP</a>, and the *nix shell (<a href="http://curl.haxx.se/">cURL</a>).
 					</p><p>
 						<h3>Smart Caching</h3>
 						Smart caching of AWS data provides fast API response times for users of Brainstem.
 						Typically, requesting information about AWS resources via Brainstem is faster then querying that 
 						same information directly from AWS.
+						<a href="http://redis.io"><img class='logo' src="img/redis.png"></a>
 					</p>
 						<h3>Temporary Resource Access</h3>
 						Brainstem supports granting access to specific AWS resources for a temporary amount of time.
@@ -73,30 +80,39 @@
 						By requesting these temporary AWS API Keys, developers are still able to utilize all of AWS's products even if Brainstem doesn't directly support them. 
 					</p><p>
 						<h3>Secure</h3>
-						All API requests and responses are encrypted from end-to-end using HTTPS.
+						All API requests and responses are required to be encrypted from end-to-end using HTTPS.
+						Any unencrypted requests to Brainstem will be denied.
 						<h3>Active Directory Integration</h3>
+						<img class='screenshot' src="img/ad-groups.png">
 						Brainstem integrates directly with Active Directory, allowing authentication and authorization to be centrally managed. Why have another system to manage your system?
 					</p><p>
 						<h3>Detailed Logging</h3>
 						Every request made through Brainstem is logged. 
 						This allows admins to easily audit changes made to their cloud infrastructure.
 						Retrieving the logs is as easy as making a REST API call or a few clicks in the web interface.
+						<img class='screenshot' src="img/logs.png">
 					</p>
 				</section>
 				<section id="web_interface">
 					<h2><img src="img/light.png" align="center"/>Brainstem Web Interface</h2>
 					<p>
 						<h3>Clean, simple user interface</h3>
+						<img class='screenshot' src="img/instances.png">
 						The Brainstem graphical user interface (GUI) application was designed for fast and efficient access to AWS resources.
 						We listened to the problems users were experiencing with our legacy AWS management application and designed the new interface with this feedback in mind.
 					</p><p>
 						<h3>HTML5 and JavaScript Thick Client</h3>
+						<div style='text-align: center;'>
+							<a href="http://www.html5rocks.com"><img class='logo' style='display: inline;' src="img/html5.png"></a>
+							<a href="http://jquery.com"><img class='logo' style='display: inline;' src="img/jquery-logo.png"></a>
+						</div>
 						We wanted the Brainstem GUI to require <i>no</i> server-side application code.
 						This means less time spent by Operations Engineers maintaining the application.
 						The entire GUI application is written in JavaScript and runs on the user's web browser.
 						All that is needed is a web server to serve the necessary HTML, CSS, and JavaScript files.
 					</p><p>
 						<h3>Develop Mode</h3>
+						<img class='screenshot' src="img/develop-mode.png">
 						To help developers quickly learn how to contruct Brainstem API requests, we created "Develop Mode".
 						Since the GUI runs completely from the user's browser, it effectively makes Brainstem API requests from the user's browser.
 						The user's GUI interactions are translated and sent off as Brainstem API requests.
@@ -126,10 +142,11 @@
 							<li>use TODO comments liberally to flag less essential things that come to mind as you're coding</li>
 							<li>the team is committing to specific goals for the week.  the team is NOT committing to working specific hours for the week.</li>
 						</ol>
+						These may seem obvious to other software developers.  In theory, they are.  Holding everyone accountable to them with the pressures of a tight deadline is much more difficult.
 					</p>
 					<p>
 						<h3>Learnings</h3>
-						We learned a ton from this experience and hope what we learned can be helpful to others.
+						We learned a ton from this experience and hope it can be helpful to others.
 						<ol>
 							<li><i>Identify the "really important things".</i><br />These might be team goals.  These might be user stories or epics.  When everyone understands really clearly what the "really important things" are, productivity goes up quickly.</li>
 							<li><i>Communicate a vision and get the team inspired and motivated by that vision.</i><br />  This one and the above one go together.  Identifying the really important things is a good first step.  Influencing everyone on the team into believing they really are important is even better.  In other words, you can't just tell them it's important, you have to convince them it's important.</li>

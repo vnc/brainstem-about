@@ -15,7 +15,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
 section { 
-	padding-bottom: 800px; 
+	padding-bottom: 120px; 
 	
 }
 
@@ -294,6 +294,22 @@ header #logo {
 	float: right;
 }
 
+.screenshot {
+	border: 1px solid #333;
+	right: 0;
+	left: 0;
+	display: block;
+	margin: 25px auto;
+	padding: 3px;
+}
+
+.logo {
+	right: 0;
+	left: 0;
+	display: block;
+	margin: 25px auto;
+}
+
 .sticky {
 	position: fixed;
 	top: 0;
@@ -310,6 +326,9 @@ header #logo {
 	-moz-border-radius-bottomright:15px;
 }
 
+h3 {
+	margin-top: 60px;
+}
 
 
 ::-moz-selection { background: #00b5f7; color: #fff; text-shadow: none; }
