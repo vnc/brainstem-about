@@ -333,7 +333,6 @@ h3 {
 	margin-top: 60px;
 }
 
-
 ::-moz-selection { background: #00b5f7; color: #fff; text-shadow: none; }
 ::selection      { background: #00b5f7; color: #fff; text-shadow: none; }
 
@@ -376,7 +375,7 @@ nav a:hover{
 
 #main aside{
 	color:white;
-	padding:10px 5%;
+	padding:30px 5%;
 }
 
 #footer-container footer{

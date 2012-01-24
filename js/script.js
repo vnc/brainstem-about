@@ -47,4 +47,16 @@ $(document).ready(function() {
 	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-150}, 500 );
 	   return false;
 	});
+	
+	$('#slider').bxSlider({
+		mode: 'fade',
+		captions: true,
+		auto: true,
+		controls: false
+	});
+	
+	$("a[rel=screenshots]").fancybox({
+		titlePosition: 'inside',
+		titleFormat: function(text) { return '<h2><span style="color: #222;">'+text+'</span></h2>'; }
+	});
 });
