@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>VivaKi Nerve Center | Brainstem</title>
 	<link rel="shortcut icon" href="favicon.ico" />
-	<meta name="description" content="">
+	<meta name="description" content="VivaKi Nerve Center's Brainstem AWS Management Console">
 	<meta name="author" content="VivaKi Nerve Center">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
@@ -72,6 +72,8 @@
 						Smart caching of AWS data provides fast API response times for users of Brainstem.
 						Typically, requesting information about AWS resources via Brainstem is faster then querying that 
 						same information directly from AWS.
+						Generally, it takes about 150ms to query several thousand snapshots from Brainstem compared to up to 2 minutes with the AWS API directly.
+						The fast <a href="http://redis.io">Redis</a> key-value store is used to store the cache data.
 						<a href="http://redis.io"><img class='logo' src="img/redis.png"></a>
 					</p><p>
 						<h3>Temporary Resource Access</h3>
@@ -160,8 +162,8 @@
 						<h3>Contributors</h3>
 						<ul>
 							<li><a href="http://github.com/dcarney">Dylan Carney</a>: API Technical Architect and Developer</li>
-							<li>Michael Wasser: API Developer</li>
-							<li>Garrett Patterson: UI Developer</li>
+							<li><a href="http://www.michaelwasser.com">Michael Wasser</a>: API Developer</li>
+							<li><a href="http://www.garrettpatterson.com">Garrett Patterson</a>: UI Developer</li>
 							<li>Carl Krauss: UI Developer</li>
 							<li>Stephen Renault: API Tester</li>
 							<li><a href="http://github.com/crcastle">Chris Castle</a>: Product Owner/API Dev/UI Dev</li>
